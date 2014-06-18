@@ -1,0 +1,10 @@
+@using tplex
+
+target=SchoolDriver
+#listener=${listener},gov.nasa.jpf.symbc.SymbolicListener
+classpath=bin
+#psxlistener.output_dir=TargetPanoramaScripts
+#psxlistener.output_all_tests=true
+#psxlistener.output_debug_comments=true
+seqlistener.output=sequences.txt
+search.depth_limit=30
