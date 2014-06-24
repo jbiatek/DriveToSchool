@@ -1,0 +1,18 @@
+@using tplex
+
+target=SchoolDriver
+target.args=100
+#listener=${listener},gov.nasa.jpf.symbc.SymbolicListener
+classpath=bin
+#psxlistener.output_dir=TargetPanoramaScripts
+#psxlistener.output_all_tests=true
+#psxlistener.output_debug_comments=true
+
+listener=edu.umn.crisys.spf.SymbolicSequenceListener
+seqlistener.output=rand_sequences.txt
+
+search.class=edu.umn.crisys.spf.RandomSearch
+search.RandomSearch.path_limit=1000
+#search.depth_limit=30
+
+cg.randomize_choices=VAR_SEED
